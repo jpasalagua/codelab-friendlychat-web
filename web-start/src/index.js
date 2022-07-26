@@ -420,7 +420,8 @@
  });
  mediaCaptureElement.addEventListener('change', onMediaFileSelected);
 
-const firebaseApp = initializeApp(getFirebaseConfig());
+ const firebaseAppConfig = getFirebaseConfig(); 
+initializeApp(getFirebaseConfig());
 getPerformance();
 initFirebaseAuth();
 loadMessages();
