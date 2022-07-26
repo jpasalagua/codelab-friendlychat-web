@@ -424,4 +424,7 @@ const firebaseApp = initializeApp(getFirebaseConfig());
 getPerformance();
 initFirebaseAuth();
 loadMessages();
+
+const firebaseAppConfig = getFirebaseConfig();
+initializeApp(firebaseAppConfig);
  
