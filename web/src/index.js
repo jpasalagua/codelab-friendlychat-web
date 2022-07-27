@@ -54,7 +54,7 @@
  // Signs-in Friendly Chat.
  async function signIn() {
   // Sign in Firebase using popup auth and Google as the identity provider.
-  var provider = new firebase.auth.GoogleAuthProvider();
+  const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(getAuth(), provider);
 }
  
